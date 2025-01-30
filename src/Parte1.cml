@@ -1,0 +1,8 @@
+Domain IngestionProcesamientoDistribucionImagenesDiagnosticas {
+    domainVisionStatement = "Ingestión, procesamieto y distribución imágenes médicas y diagnosticos anonimizados"
+
+    Subdomain {
+        type = 
+        domainVisionStatement = 
+    }
+}

@@ -1,0 +1,67 @@
+Domain IngestionProcesamientoDistribucionImagenesDiagnosticas {
+    domainVisionStatement = "Ingestión, procesamieto y distribución imágenes médicas y diagnosticos anonimizados."
+
+    Subdomain Categorizado {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Categorizar imágenes médicas y diagnosticos por modalidad, región anatómica y patología/condición."
+    }
+
+    Subdomain Etiquetado {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Etiquetar imágenes médicas y diagnosticos para entender todas las posibles características y metadatos."
+    }
+
+    Subdomain Anonimizado {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Anonimizar imágenes médicas y diagnosticos para ofuscar los datos sensible asociados a los pacientes."
+    }
+
+    Subdomain EntrenamientoModelosIA {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Entrenar modelos de inteligencia artificial a partir de imagenes médicas y diagnosticos."
+    }
+
+    Subdomain SoporteProveedores {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Soportar a los proveedores para el manejo de información básica, recepción de solicitudes y pagos."
+    }
+
+    Subdomain SoporteConsumidores {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Soportar a los consuimidores para el manejo de productos asociados."
+    }
+}
+
+BoundedContext ContextoProcesamientoImagenes implements Categorizado, Etiquetado, Anonimizado {
+    type = FEATURE
+    domainVisionStatement = "Contexto para las funcionalidades de categorizado, etiquetado y anonimizado de imágenes médicas y diagnosticos."
+}
+
+BoundedContext ContextoEntrenamientoExtraccionFeatures implements EntrenamientoModelosIA{
+    type = FEATURE
+    domainVisionStatement = "Contexto para el entrenamiento de modelos de IA y extraccion de features en base al procesamiento de las imágenes médicas y diagnosticos."
+}
+
+BoundedContext ContextoDataPartnership implements SoporteProveedores {
+   type = FEATURE
+   domainVisionStatement = "Contexto que maneja la recepción de los datos por parte de los proveedores."
+}
+
+BoundedContext ContextoDesarrolladoresIA implements SoporteConsumidores {
+   type = FEATURE
+   domainVisionStatement = "Contexto  que maneja la distribución de los datos procesados a los consumidores."
+}
+
+ContextMap SaludTechDeLosAlpes{
+    type = SYSTEM_LANDSCAPE
+    state = AS_IS
+
+    contains ContextoProcesamientoImagenes
+    contains ContextoEntrenamientoExtraccionFeatures
+    contains ContextoDataPartnership
+    contains ContextoDesarrolladoresIA
+
+    ContextoProcesamientoImagenes [D] <- [U] ContextoDataPartnership
+    ContextoEntrenamientoExtraccionFeatures [D] <- [U] ContextoProcesamientoImagenes
+    ContextoDesarrolladoresIA [D] <- [U, PL] ContextoEntrenamientoExtraccionFeatures
+}

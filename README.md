@@ -17,18 +17,18 @@
 
 #### AS-IS
 
-https://github.com/JulianP911/MISW4406-Entrega-1/blob/main/event-storming/EventStorming%20-%20AS-IS%20-%20SaludTech.jpg
+![EventStorming - AS-IS](event-storming/EventStorming%20-%20AS-IS%20-%20SaludTech.jpg)
 
 #### TO-BE
 
-https://github.com/JulianP911/MISW4406-Entrega-1/blob/main/event-storming/EventStorming%20-%20TO-BE%20-%20SaludTech.jpg
+![EventStorming - TO-BE](event-storming/EventStorming%20-%20TO-BE%20-%20SaludTech.jpg)
 
 ### Parte 3: Contextos Acotados AS-IS y TO-BE
 
 #### AS-IS
 
-https://github.com/JulianP911/MISW4406-Entrega-1/blob/main/src-gen/AS-IS%20-%20ContextMap.png
+![ContextoAcotado - AS-IS](src-gen/AS-IS%20-%20ContextMap.png)
 
 #### TO-BE
 
-https://github.com/JulianP911/MISW4406-Entrega-1/blob/main/src-gen/TO-BE%20-%20ContextMap.png
+![ContextoAcotado - TO-BE](src-gen/TO-BE%20-%20ContextMap.png)

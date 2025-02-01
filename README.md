@@ -13,7 +13,9 @@
 
 ### Parte 1: Dominios y Subdominos
 
-En la carpeta <code>src</code> se encuentr el archivo <code>ParteDominioSubdominios.cml</code> donde se define los dominios y sub-dominios del proyecto SaludTech de los Alpes.
+En la carpeta <code>src</code> se encuentrá el archivo <code>ParteDominioSubdominios.cml</code> donde se define los dominios y sub-dominios del proyecto SaludTech de los Alpes usando el DSL de ContextMapper.
+
+**Nota:** En el mismo archivo se encuentrá al final la definición de dos historias de usuario parte del bono establecido.
 
 ### Parte 2: EventStorming "anonimizado, ingestión y enriquecimiento de datos" AS-IS y TO-BE
 

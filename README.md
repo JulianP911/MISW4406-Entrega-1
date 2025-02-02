@@ -19,7 +19,7 @@ En la carpeta <code>src</code> se encuentra el archivo <code>ParteDominioSubdomi
 
 ### Parte 2: EventStorming "anonimizado, ingestión y enriquecimiento de datos" AS-IS y TO-BE
 
-En la carpeta <code>event-storming</code> se encuentran los archivos <code>EventStorming - AS-IS - SaludTech.cml</code> y  <code>EventStorming - TO-BE - SaludTech.cml</code> correspondiente a la documentación del flujo "anonimizado, ingestión y enriquecimiento de datos" para el estado actual (AS-IS) y futuro (TO-BE).
+En la carpeta <code>event-storming</code> se encuentran los archivos <code>EventStorming - AS-IS - SaludTech.jpg</code> y  <code>EventStorming - TO-BE - SaludTech.jpg</code> correspondiente a la documentación del flujo **"anonimizado, ingestión y enriquecimiento de datos"** para el estado actual (AS-IS) y futuro (TO-BE).
 
 #### AS-IS
 
@@ -30,6 +30,8 @@ En la carpeta <code>event-storming</code> se encuentran los archivos <code>Event
 ![EventStorming - TO-BE](event-storming/EventStorming%20-%20TO-BE%20-%20SaludTech.jpg)
 
 ### Parte 3: Contextos Acotados AS-IS y TO-BE
+
+En la carpeta <code>src</code> se encuentran los archivos fuente <code>ParteAS-IS.cml</code> y <code>ParteTO-BE.cml</code> de la definición de los contextos acotados y sus relaciones para el proyecto SaludTech de los Alpes para el estado actual (AS-IS) y futuro (TO-BE). Asimismo, en la carpeta <code>src-gen</code> se encuentran los archivos generados <code>AS-IS - ContextMap.png</code> y <code>TO-BE - ContextMap.png</code> correspondientemente.
 
 #### AS-IS
 

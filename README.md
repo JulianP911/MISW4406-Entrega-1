@@ -13,11 +13,13 @@
 
 ### Parte 1: Dominios y Subdominos
 
-En la carpeta <code>src</code> se encuentrá el archivo <code>ParteDominioSubdominios.cml</code> donde se define los dominios y sub-dominios del proyecto SaludTech de los Alpes usando el DSL de ContextMapper.
+En la carpeta <code>src</code> se encuentra el archivo <code>ParteDominioSubdominios.cml</code> donde se define los dominios y sub-dominios del proyecto SaludTech de los Alpes usando el DSL de ContextMapper.
 
-**Nota:** En el mismo archivo se encuentrá al final la definición de dos historias de usuario parte del bono establecido.
+**Nota:** En el mismo archivo se encuentra al final la definición de dos historias de usuario parte del bono establecido.
 
 ### Parte 2: EventStorming "anonimizado, ingestión y enriquecimiento de datos" AS-IS y TO-BE
+
+En la carpeta <code>event-storming</code> se encuentran los archivos <code>EventStorming - AS-IS - SaludTech.cml</code> y  <code>EventStorming - TO-BE - SaludTech.cml</code> correspondiente a la documentación del flujo "anonimizado, ingestión y enriquecimiento de datos" para el estado actual (AS-IS) y futuro (TO-BE).
 
 #### AS-IS
 
